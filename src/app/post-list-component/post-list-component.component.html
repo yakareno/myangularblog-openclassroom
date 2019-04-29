@@ -1,0 +1,10 @@
+<div class="container">
+  <ul>
+    <app-post-list-item-component *ngFor = "let p of messages"
+                                  [title] = "p.title"
+                                  [content] = "p.content"
+                                  [loveIts]="p.loveIts"
+                                  [createdAt]="p.created_at" >
+    </app-post-list-item-component>
+  </ul>
+</div>
